@@ -94,7 +94,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*overflow: hidden;*/
+    overflow: hidden;
+    transition: .2s ease;
+}
+
+.wrapper.active{
+    height: 520px;
 }
 
 .wrapper .icon-close{
@@ -114,9 +119,30 @@ header{
 
 }
 
-.wrapper .form-box{
+.wrapper .form-box {
     width: 100%;
     padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: transform 0.18s ease; /* Correção: adicionado 's' em '.18' */
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: none;
+    transform: translateX(0);
 }
 
 .form-box h2{
