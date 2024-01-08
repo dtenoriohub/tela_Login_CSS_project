@@ -3,9 +3,9 @@
 
 ### projeto criado apenas para pratica e estudos.
 
-![tela de Login](C:\Users\Dtenorio\Desktop\tela_Login_CSS_project\imgs\tela login.png)
+![tela de Login](./imgs/tela%20login.png)
 
-![tela de cadastro](C:\Users\Dtenorio\Desktop\tela_Login_CSS_project\imgs\tela cadastro.png)
+![tela de cadastro](./imgs/tela%20cadastro.png)
 
-![tela home com interação ](C:\Users\Dtenorio\Desktop\tela_Login_CSS_project\imgs\tela home interativa.png)
+![tela home com interação ](./imgs/tela%20home%20interativa.png)
 
