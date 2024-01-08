@@ -95,9 +95,16 @@ header{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: .2s ease;
+    transform: scale(0);
+    transition: transform .5s ease ,.2s ease;
 }
 
+.wrapper.active-popup{
+    transform: scale(1);
+}
+.wrapper.active-close{
+    transform: scale(0);
+}
 .wrapper.active{
     height: 520px;
 }
@@ -136,12 +143,12 @@ header{
 
 .wrapper .form-box.register {
     position: absolute;
-    transition: transform 0.18s ease; /* Correção: adicionado 's' em '.18' */
+    transition: none;
     transform: translateX(400px);
 }
 
 .wrapper.active .form-box.register {
-    transition: none;
+    transition: transform 0.18s ease;
     transform: translateX(0);
 }
 
